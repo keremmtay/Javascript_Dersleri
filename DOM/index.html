@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- DOM: Document Object Model -->
+
+    <div class="cart">
+        <h2 id="baslik" class="sınıf1 sınıf2 sınıf3">Uygulama</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+    <script>
+        let sonuc;
+        sonuc = document.getElementById("baslik");
+        sonuc = document.getElementById("baslik").id;
+        sonuc = document.getElementById("baslik").className;
+        sonuc = document.getElementById("baslik").classList;
+
+        document.getElementById("baslik").style.fontSize = "30px";
+        document.getElementById("baslik").style.color = "red";
+        document.getElementById("baslik").style.backgroundColor = "yellow";
+        //document.getElementById("baslik").style.display = "none";
+
+        sonuc = document.getElementById("baslik").innerText;
+        document.getElementById("baslik").innerText = "NA-203 Akşam Sınıfı";
+        sonuc = document.getElementById("baslik").innerHTML = "<p>InnerHTML ile değiştirilmiştir</p>";
+
+        console.log(sonuc);
+    </script>
+</body>
+</html>
